@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="./bootstrap.min.css"/>
+</head>
+    <div class="btn-box"> 
+        <div>
+            <marquee behavior="alternate";scrollamount:"100px"><h1 class="title"><i class="fab fa-java"></i>KHÓA HỌC LẬP TRÌNH JAVA</h1></marquee>
+        </div>
+        <!--DN,DK-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Đăng nhập</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Đăng Ký</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+
+        
+        <div class="login-wrap">
+          <div class="login-html">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </br></br>
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="login-form">
+              <div class="sign-in-htm">
+                <div class="group">
+                  <label for="user" class="label">Username</label>
+                  <input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Password</label>
+                  <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                  <input id="check" type="checkbox" class="check" checked>
+                  <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                </div>
+                <div class="group">
+                  <input type="submit" onclick="window.close()" class="button" value="Sign In">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                  <a href="#forgot">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="sign-up-htm">
+                <div class="group">
+                  <label for="user" class="label">Username</label>
+                  <input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Password</label>
+                  <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Repeat Password</label>
+                  <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Email Address</label>
+                  <input id="pass" type="text" class="input">
+                </div>
+                <div class="group">
+                  <input type="submit" class="button" value="Sign Up">
+                </div>
+                <div class="hr"></div>		
+                <div class="foot-lnk">
+                  <label for="tab-1">Already Member?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+
+
+
+
+    </div>
+    <br>
+<body>
+   <!--header-col-->
+      <div class="container">
+          <div class="row">  <!-- col 1-->
+            <div class="col-sm-3">
+                <img class="logo" src="img/java-mini-logo.jpg">
+              </br>
+                <a href="index.html"><h5>&#10040;Java Cơ Bản</h5></a>
+                <a href="index.html"><h6>&#10154;	Java là gì?</h6></a>
+                <a href="#"><h6>&#10154;Lịch sử Java</h6></a>
+                <a href="#"><h6>&#10154;Các tính năng của Java</h6></a>
+                <a href="#"><h6>&#10154;Cài đặt môi trường Java (cho người mới bắt đầu)</h6></a>
+                <a href="#"><h6>&#10154;Thiết lập PATH cho java</h6></a>
+                <a href="#"><h6>&#10154;Chương trình Hello World</h6></a>
+                <a href="#"><h6>&#10154;JDK, JRE và JVM</h6></a>
+                <a href="#"><h6>&#10154;Biến trong java</h6></a>
+                <a href="#"><h6>&#10154;Các kiểu dữ liệu trong java</h6></a>
+                <a href="#"><h6>&#10154;Ép kiểu (Type casting)</h6></a>
+                <a href="#"><h6>&#10154;Các toán tử trong Java</h6></a>
+                <a href="#"><h6>&#10154;Hệ thống Unicode trong java</h6></a>
+            </div>
+            <div class="col-sm-6"> <!-- col 2-->
+                <img src="img/anhchinh.jpg" width="530px" height="520px">
+            </br></br>
+            </div>
+            <!--header-col-right-->
+            <div class="col-sm-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/java-mini-logo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img-top" src="img/java-la-gi.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm-3">
+        <div class="card khoa">
+          <img class="card-img-top" src="img/java-la-gi.png" height="100px" alt="Card image cap">
+          <div class="card-body">
+            <div>
+              <a href="hocnhanh.html" class="btn btn-primary khoa"><i class="fa fa-video"></i>Học ngay</a>
+            </div>
+            <h5 class="card-title">Java cơ bản</h5>
+            <p class="card-text">Trước khi đi vào khóa học, chúng ta hãy cùng tìm hiểu sơ lược về Java</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="img/lich-su-hinh-thanh-va-phat-trien-cua-java-ngon-ngu-lap-trinh-pho-bien-nhat-the-gioi.jpg" height="120px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lịch sử JAVA</h5>
+              <p class="card-text">Tìm hiểu về lịch sử ra đời và phát triển của ngôn ngữ Java</p>
+              <a href="lichsu.html" class="btn btn-primary"><i class="fa fa-video"></i> Học ngay</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="img/tinh-nang.png" height="142px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tính năng của JAVA</h5>
+              <p class="card-text">Các tính năng của ngôn ngữ JAVA</p>
+              <a href="tinhnang.html" class="btn btn-primary"><i class="fa fa-video"></i> Học ngay</a>
+            </div>
+          </div>
+        </div>
+     
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="img/how-to-install-java-environment-for-pc.jpg" height="93px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Biến môi trường</h5>
+              <p class="card-text">Chúng ta hãy cùng học cách cài đặt jdk, thiết lập biến môi trường và cùng lập trình project đầu tiên.</p>
+              <a href="caidatmoitruong.html" class="btn btn-primary"><i class="fa fa-video"></i> >Học ngay</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="img/viet-chuong-trinh-java-dau-tien.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Chương trình đầu tiên</h5>
+              <p class="card-text">Hãy học cách viết chương trình đầu tiên "Hello World"</p>
+              <a href="Cthelloword.html" class="btn btn-primary"><i class="fa fa-video"></i> Học ngay</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+       <div class="col-sm-3">
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+      <!--Footer-->
+      <footer class="page-footer font-small pt-4 bg-dark">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+      
+            <div class="col-md-6 mt-md-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a style="color: white;" class="as" href="#!">TRANG CHỦ</a>
+                </li>
+                <li>
+                  <a style="color: white;" class="as" href="#!">NỘI DUNG</a>
+                </li>
+                <li>
+                  <a style="color: white;" class="as" href="#!">abc</a>
+                </li>
+                <li>
+                  <a style="color: white;" class="as" href="#!">def</a>
+                </li>
+                <li>
+                  <a style="color: white;" class="as" href="#!">klm</a>
+                </li>
+              </ul>
+      
+            </div>
+         
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <div class="col-md-3 mb-md-0 mb-3">
+                <p>Kết nối với chúng tôi trên:</p>
+                <i class="fab fa-facebook-square" style="font-size:36px;color:rgb(216, 240, 6)"></i>
+              <i class="fab fa-twitter-square" style="font-size:36px;color:rgb(216, 240, 6)"></i>
+              <i class="fas fa-envelope" style="font-size:36px;color:rgb(216, 240, 6)"></i>
+              <i class="fa fa-plus-square" style="font-size:36px;color:rgb(216, 240, 6)"></i>
+           
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              Đăng kí nhận thông tin
+              <input type="email" class="form-control" id="pwd" placeholder="Nhập địa chỉ Email" name="pwd">
+            </div>
+           
+      
+          </div>
+         
+      
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="#">Khoahoclaptrinh</a>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="./bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

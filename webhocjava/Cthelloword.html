@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA-TINHNANG</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css"/>
+    <script src="./bootstrap.min.js"></script>
+</head>
+<body style="background-color: #DEB887;">
+    <div style="display: flex;flex-direction: row;margin-left: 2px;margin-right: 6px;">
+        <!--Cột trái-->
+        <div style="border-right: 10px;border-bottom: 10px;">
+            <iframe width="670px" height="680px" src="https://www.youtube.com/embed/_MNFPiyPQbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+<!--Cột phải-->
+        <div style=" border-left-style: double;border-right: 5px;">
+            <div style="overflow-y: scroll;height:750px; margin-left: 10px;">
+                 <!--Nội dung bắt đầu từ đây-->
+                 <h1 class="entry-title">Hello World Trong Java</h1>
+                 <p> Chương này, chúng ta sẽ học cách viết một chương trình đơn giản trong java. Để viết chương trình Hello World trong java, đầu tiên bạn nên cài JDK </p>
+<p> Để tạo một chương trình Java đơn giản, bạn cần tạo một lớp chứa phương thức main. </p><p>
+</p><p> Để thực thi bất cứ chương trình Java nào, bạn cần phải đáp ứng những yêu cầu sau: </p>
+<ul>
+<li>Cài đặt JDK nếu bạn chưa cài đặt nó. Bạn có thể tải JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">tại đây.</a> </li>
+<li>Thiết lập path cho java, tham khảo chương <a href="https://viettuts.vn/java/thiet-lap-path-cho-java">thiết lập path cho java.</a></li>
+<li>Tạo chương trình Java.</li>
+<li> Biên dịch và chạy chương trình Java. </li>
+</ul>
+<hr>
+
+<div class="goto-wrapper mom_list">
+<p>Nội dung chính </p>
+<ul id="go-to-detail">
+<li class="list-goto-1">
+<a href="cthelloword.html#goto-h2-1">Tạo ví dụ Hello World</a>
+</li>
+<li class="list-goto-2">
+<a href="cthelloword.html#goto-h2-2">Phân tích chương trình java Hello World</a>
+</li>
+<li class="list-goto-3">
+<a href="cthelloword.html#goto-h2-3">Có bao nhiêu cách để viết một chương trình java</a>
+<ul>
+<li>
+<a href="cthelloword.html#goto-h3-1">1. Thay đổi thứ tự các modifier, không thay đổi thứ tự của tham số.</a>
+</li>
+<li>
+<a href="cthelloword.html#goto-h3-2">2. Thay kiểu khai báo tham số (mảng args)</a>
+</li>
+<li>
+<a href="cthelloword.html#goto-h3-3">3. Sử dụng dấu ba chấm ... thay vì [] khi khai báo tham số (mảng args)</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="goto-h2-1"> Tạo ví dụ Hello World </h2>
+<p> Dưới đây là ví dụ Hello World trong java: </p>
+<p> File: HelloWorld.java </p>
+<div class="codeblock">
+<div><div id="highlighter_51238" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/hello-world-trong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">public</code> <code class="java keyword">class</code> <code class="java plain">HelloWorld {</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args) {</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"Hello World!"</code><code class="java plain">);</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number5 index4 alt2"><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<p> Save đoạn code trên trên thành file HelloWorld.java </p>
+<p> Để biên dịch và chạy ví dụ trên bạn làm như sau: </p><p>
+</p><ol>
+<li> <strong>Run cmd.exe</strong> bằng cách bấm tổ hớp phím Window + R --&gt; gõ cmd --&gt; enter </li>
+<li> <strong>Lệnh CD</strong> đến thư mục chứa file HelloWorld.java </li>
+<li> <strong>Để biên dịch</strong>, bạn gõ lệnh: javac HelloWorld.java </li>
+<li> <strong>Để run</strong>, bạn gõ lệnh: java HelloWorld </li>
+</ol>
+<p> Kết quả: </p>
+<img src="./home_files/hello-world-trong-java.png" alt="Hello World trong java" title="Hello World trong java">
+<div class="note"> Trên đây là một ví dụ về Hello World trong java sử dụng command line để biên dịch và run. Chúng tôi sử dụng command line để giới thiệu bạn cách biên dịch và run mã nguồn java. Ngoài ra, cũng như các ngôn ngữ lập trình khác, java có rất nhiều IDE hỗ trợ lập trình chẳng hạn như eclipse, netbean, intellij, ... </div>
+<hr>
+
+<div class="ad-content">
+        <!-- tuts-in-content-1 -->
+        </div><br>
+<h2 id="goto-h2-2"> Phân tích chương trình java Hello World </h2>
+<p> Dưới đây, chúng tôi sẽ giúp bạn hiểu ý nghĩa của class, public, static, void, main, String[], System.out.println(). </p>
+<ul>
+<li> <strong>class:</strong> được sử dụng để khai báo một lớp trong Java. </li>
+<li> <strong>public:</strong> là một Access Modifier mà biểu diễn tính nhìn thấy, nghĩa rằng nó là nhìn nhất với tất cả. </li>
+<li><strong>static:</strong> là một từ khóa, mà nếu chúng ta khai báo bất cứ phương thức nào là static thì nó còn được gọi là phương thức tĩnh hoặc phương thức static. Lợi thế chủ yếu của phương thức static là không cần thiết tạo đối tượng để triệu hồi phương thức static. Phương thức main được thực thi bởi JVM, vì thế bạn không cần thiết tạo một đối tượng để gọi phương thức main. Việc này giúp tiết kiệm bộ nhớ. </li>
+<li> <strong>void:</strong> là kiểu trả về của phương thức, nghĩa là phương thức không trả về bất cứ giá trị nào.</li>
+<li> <strong>main:</strong> đại diện cho khởi động chương trình. </li>
+<li> <strong>String[] args:</strong> được sử dụng cho tham số dòng lệnh. Bạn sẽ tìm hiểu về chúng sau.</li>
+<li> <strong>System.out.println():</strong> được sử dụng như là lệnh in. Chương sau, bạn sẽ thấy cách làm việc nội tại của lệnh System.out.println này. </li>
+</ul>
+<hr>
+
+<h2 id="goto-h2-3"> Có bao nhiêu cách để viết một chương trình java </h2>
+<p> Có nhiều cách để viết một chương trình Java. Các sửa đổi có thể được thực hiện trong chương trình Java như sau:</p>
+<h3 id="goto-h3-1"> 1. Thay đổi thứ tự các modifier, không thay đổi thứ tự của tham số. </h3>
+<strong> Ví dụ: </strong>
+<div class="codeblock">
+<div><div id="highlighter_135348" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/hello-world-trong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">static</code> <code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java plain">main(String args[])</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<hr>
+
+<h3 id="goto-h3-2"> 2. Thay kiểu khai báo tham số (mảng args) </h3>
+<strong> Ví dụ: </strong>
+<div class="codeblock">
+<div><div id="highlighter_435715" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/hello-world-trong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number2 index1 alt1"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String []args)&nbsp; </code></div><div class="line number3 index2 alt2"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String args[])&nbsp;&nbsp; </code></div></div></td></tr></tbody></table></div></div>
+</div>
+<hr>
+
+<h3 id="goto-h3-3"> 3. Sử dụng dấu ba chấm ... thay vì [] khi khai báo tham số (mảng args) </h3>
+<strong> Ví dụ: </strong>
+<div class="codeblock">
+<div><div id="highlighter_808836" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/hello-world-trong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String... args)</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<hr>
+
+<h4> Một số phương thức main hợp lệ trong Java: </h4>
+<div class="codeblock">
+<div><div id="highlighter_277673" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/hello-world-trong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number2 index1 alt1"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String []args)&nbsp; </code></div><div class="line number3 index2 alt2"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String args[])&nbsp; </code></div><div class="line number4 index3 alt1"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String... args)&nbsp; </code></div><div class="line number5 index4 alt2"><code class="java keyword">static</code> <code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number6 index5 alt1"><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">final</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number7 index6 alt2"><code class="java keyword">final</code> <code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number8 index7 alt1"><code class="java keyword">final</code> <code class="java keyword">strictfp</code> <code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<hr>
+
+<h4> Một số phương thức main không hợp lệ trong Java: </h4>
+<div class="codeblock">
+<div><div id="highlighter_550065" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/hello-world-trong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number2 index1 alt1"><code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number3 index2 alt2"><code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java keyword">static</code> <code class="java plain">main(String[] args)&nbsp; </code></div><div class="line number4 index3 alt1"><code class="java keyword">abstract</code> <code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args)&nbsp;&nbsp;&nbsp; </code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<hr>
+<!--Stop Here!!-->                 
+</div>
+        </div>
+    </div>
+</body>
+</html>

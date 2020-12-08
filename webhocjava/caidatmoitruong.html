@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA-MOITRUONG</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css"/>
+    <script src="./bootstrap.min.js"></script>
+</head>
+<body style="background-color: #DEB887;">
+    <div style="display: flex;flex-direction: row;margin-left: 2px;margin-right: 6px;">
+        <!--Cột trái-->
+        <div style="border-right: 10px;border-bottom: 10px;">
+            <iframe width="670px" height="680px" src="https://www.youtube.com/embed/KjMRn1YQcLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+<!--Cột phải-->
+        <div style=" border-left-style: double;border-right: 5px;">
+            <div style="overflow-y: scroll;height:750px; margin-left: 10px;">
+                 <!--Nội dung bắt đầu từ đây-->
+                 <h1 class="entry-title">Cài đặt môi trường Java</h1>
+                 <!-- 
+                 <div class="post-views">
+                   <i class="fa fa-eye"></i>
+                     <span class="td-views" th:utext="${postTemplate.postPageViews} + ' views'"></span>
+                 </div>
+                 <div class="clearer"></div>
+                 -->
+                 
+               </header>
+ <hr>
+ 
+ <p> Bài học này mình hướng dẫn bạn: </p><p>
+ </p><ol>
+ <li> Cách <strong>cài đặt môi trường java</strong> trên Windows. </li>
+ <li> Tạo chương trình java đầu tiên trên eclipse. </li>
+ <li> Cách cài đặt môi trường java trên Linux (Ubuntu). </li>
+ </ol>
+ <hr>
+ 
+ <div class="goto-wrapper mom_list">
+ <p>Nội dung chính </p>
+ <ul id="go-to-detail">
+ <li class="list-goto-1">
+ <a href="caidatmoitruong.html#goto-h2-1">1. Cài đặt môi trường java trên Windows</a>
+ <ul>
+ <li><a href="caidatmoitruong.html#goto-h3-1">Cài đặt JDK (Java Development Kit)</a></li><li><a href="https://viettuts.vn/java/cai-dat-moi-truong-java#goto-h3-2">Cấu hình biến môi trường</a></li></ul>
+ </li>
+ <li class="list-goto-2">
+ <a href="caidatmoitruong.html#goto-h2-2">2. Tạo chương trình java đầu tiên trên eclipse</a>
+ <ul>
+ <li><a href="caidatmoitruong.html#goto-h3-3">Tạo chương trình java đầu tiên trên eclipse</a></li><li><a href="https://viettuts.vn/java/cai-dat-moi-truong-java#goto-h3-4">Chạy chương trình java đầu tiên trên eclipse</a></li></ul>
+ </li>
+ <li class="list-goto-3">
+ <a href="caidatmoitruong.html#goto-h2-3">3. Cài đặt môi trường java trên Linux (Ubuntu)</a>
+ </li>
+ </ul>
+ </div>
+ <h2 id="goto-h2-1"> 1. Cài đặt môi trường java trên Windows </h2>
+ <p> Để lầm việc với java bạn phải cài đặt môi trường cho nó, môi trường java bao gồm những gì? Phần này viettuts.vn hướng dẫn bạn cài đặt môi trường cho java trên môi trường Windows. Còn trên môi trường Linux(Ubuntu) ở phía cuối của bài học. </p>
+ <p> Dưới đây là những gì cơ bản và cần thiết bạn cần phải cài đặt: </p>
+ <ul> 
+ <li> Cài đặt JDK (Java Development Kit) </li>
+ <li> Cấu hình biến môi trường. </li>
+ </ul>
+ <p> Về cơ bản thì chỉ cần 2 bước trên là đủ để tạo ra và chạy một chương trình java đơn giản. Dưới đây là chi tiết cho các bước trên. </p>
+ <hr>
+ 
+ <h3 id="goto-h3-1">  Cài đặt JDK (Java Development Kit) </h3>
+ <p> <strong>JDK là gì</strong>? JDK (là viết tắt của Java Development Kit) là một bộ phát triển phần mềm để phát triển các ứng dụng trong Java. JDK bao gồm JRE và các Development Tool. Ngoài JRE, JDK cũng chứa số công cụ phát triển (trình biên dịch, JavaDoc, Java Debugger, ...) tham khảo tại <a href="https://viettuts.vn/java/su-khac-nhau-giua-jdk-jre-va-jvm">sự khác nhau giữa JDK, JRE và JVM</a>. Nên bạn chỉ cần tải JDK về là đủ. </p>
+ <p> Hiện nay có 2 phiên bản java được sử dụng phổ biến đó là JDK7 và JDK8, dưới đây là link download JDK8: </p>
+ <ul>
+ <li> Link: <a href="http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html</a> </li>
+ <li> Click vào 'Accept License Agreement': <br>
+ <img src="img/jdk.png" alt="Cài đặt môi trường java" title="Cài đặt môi trường java"> </li>
+ <li> Nếu hệ điều hành của bạn là 32bit thì bạn tải về bản x86, 64bit thì bạn có thể tải 1 trong 2 hoặc cả 2 x86 và x64 đều được. </li>
+ </ul>
+ <p> Sau khi tải JDK về, bạn cài đặt giống như cài đặt các phần mềm khác. </p>
+ <hr>
+ 
+ <h3 id="goto-h3-2"> Cấu hình biến môi trường </h3>
+ <p> Việc cấu hình biến môi trường bao gồm 2 việc sau: </p>
+ <ul>
+ <li> Tạo biến JAVA_HOME </li>
+ <li> Sửa biến Path </li>
+ </ul>
+ <hr>
+ 
+ <h4> Tạo biến JAVA_HOME </h4>
+ <p> Click chuột phải vào biểu tượng MyComputer --&gt; Properties -&gt; Advanced system settings -&gt; Environment Variables -&gt; Click 'New' trong System Variables </p>
+ <img src="img/enviroment.png">
+ <p> Nhập: Variable name = "JAVA_HOME" và Variable value = [java-path] </p>
+ <h5> Ví dụ </h5>
+ <img src="img/editeviroment.png">
+ <p> Click: OK -&gt; OK -&gt; OK </p>
+ <hr>
+ 
+ <h4> Sửa biến Path </h4>
+ <p> Click chuột phải vào biểu tượng MyComputer --&gt; Properties -&gt; Advanced system settings -&gt; Environment Variables -&gt; edit biến Path trong System Variables -&gt; thêm [java-path]\bin vào biến Path -&gt; OK -&gt; OK -&gt; OK </p>
+ <h5> Ví dụ </h5>
+ <p> Edit biến path trong System Variables </p>
+ <img src="img/javahome.png">
+ <p> Nhập giá trị sau vào cuối biến path: </p>
+ <div class="codeblock">
+ <div><div id="highlighter_753484" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://viettuts.vn/java/cai-dat-moi-truong-java#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java plain">C:\Program Files\Java\jdk1.</code><code class="java value">8</code><code class="java plain">.0_45\bin</code></div></div></td></tr></tbody></table></div></div>
+ </div>
+ <img src="img/cauhinhjavahome.png" alt="Cài đặt môi trường java" title="Cài đặt môi trường java">
+ <p> Click button OK -&gt; OK -&gt; OK.
+ </p><p> Bạn cần phải restart (hoặc sign out) máy tính sau khi cài đặt biến môi trường. </p>
+ <hr>
+ 
+ <br>
+ <h2 id="goto-h2-2"> 2. Tạo chương trình java đầu tiên trên eclipse </h2>
+ <p> Khi mới học java có khi nào bạn tự hỏi các doạn code java được viết vào đâu (editor nào)? biên dịch và chạy nó như nào? Bạn có thể tham khảo bài <a href="https://viettuts.vn/java/hello-world-trong-java">Hello World trong java</a> để biết cách tạo chương trình java bằng notepad và hiểu một chương trình java được biên địch như thế nào.</p>
+ <p> Nhưng sau đó bạn nên biết và sử dụng <strong>eclipse</strong> hoặc <strong>netbean</strong>, vì chúng là 2 IDE miễn phí phổ biến mạnh mẽ nhất được sử dụng trong việc lập trình java. Phần này viettuts.vn hướng dẫn bạn cách <strong>tạo và chạy chương trình java đầu tiên trên eclipse</strong>. </p>
+<!----> <p> Tiếp theo là bạn cần phải tải về và cài đặt eclipse. Tham khảo bài <a href="https://viettuts.vn/eclipse/download-va-cai-dat-eclipse">download và cài đặt Eclipse IDE cho lập trình Java</a>. </p>
+ <hr>
+ 
+ <h3 id="goto-h3-3"> Tạo chương trình java đầu tiên trên eclipse </h3>
+ <p> Dưới đây là các bước tạo chương trình java đầu tiên trên eclipse: </p>
+ <p> Chọn File -&gt; New -&gt; Other... <br>
+ Nhập Wizards = "java project" để tìm kiếm nhanh:<br>
+ Sau đó chọn "Java Project" -&gt; Next: </p>
+ <img src="img/new-project.png">
+ <p> Nhập project name: "java-hello-world" -&gt; Finish </p>
+ <img src="img/name-helloword.png">
+ <p> Click OK tại dialog "Open Associated Perspective" </p>
+ <img src="img/package.png" width="300px" height="300px">
+ <p> Tạo package cho project: click chuột phải vào "src" -&gt; New -&gt; packpage </p>
+ <img src="img/clickok.png">
+ <p> Nhập package name = "vn.viettuts" -&gt; Finish </p>
+ <img src="img/new-class.png" width="300px" height="300px">
+ <p> Click chuột phải vào packpage "vn.viettuts" -&gt; New -&gt; Class </p>
+ <img src="img/hello-world-.png">
+ <p> Nhập Name = "HelloWorld" -&gt; Finish </p>
+ <img src="img/vd-eclipse1.png">
+ <p> Eclipse tạo cho bạn lớp HelloWorld.java như sau: </p>
+ <img src="img/vd-eclipse2.png">
+ <p> Viết hàm <strong>main</strong> cho lớp HelloWorld.java như sau: </p>
+ <img src="img/vd-eclipse2.png">
+ <hr>
+ 
+ <h3 id="goto-h3-4"> Chạy chương trình java đầu tiên trên eclipse </h3>
+ <p> Sử dụng tổ hớp phím <strong>CTRL + F11</strong> để chạy (run) chương trình java trên eclipse, với chương trình đã tạo ở trên chúng ta có kết quả như sau: </p>
+ <img src="img/end-new-project.png">
+ <hr>
+ 
+ <h2 id="goto-h2-3"> 3. Cài đặt môi trường java trên Linux (Ubuntu) </h2>
+ <p> To be continued... </p>
+ 
+ <hr>
+ <hr>
+<!--Stop Here!-->               
+</div>
+        </div>
+    </div>
+</body>
+</html>
