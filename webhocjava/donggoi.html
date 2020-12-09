@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính đóng gói trong java</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="donggoi.css">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LGLH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/ckBc_1XnXhA"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-sm-6">
+                    <div id="wrapper">
+                        <div id="scroller">
+                                <h4 class="gach">Tính đóng gói trong java </h4> 
+                                <div class="chux"> 
+                                    <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Abstract class vs Interface</p>
+                                    <p class="chux1">Tính kế thừa trong java <i class="fas fa-arrow-circle-right"></i></p>    
+                                </div>
+                                <p class="menhde"><strong>Tính đóng gói trong java </strong> là kỹ thuật ẩn giấu thông tin không liên quan và hiển thị ra thông tin liên quan. Mục đích chính của đóng gói trong java là giảm thiểu mức độ phức tạp phát triển phần mềm.
+                                   <img src="img/tinh-dong-goi-trong-java.jpg" alt="h" style="margin-left: 50px; padding: 10px;"> <br>
+                                   Đóng gói cũng được sử dụng để bảo vệ trạng thái bên trong của một đối tượng. Bởi việc ẩn giấu các biến biểu diễn trạng thái của đối tượng. Việc chỉnh sửa đối tượng được thực hiện, xác nhận thông qua các phương thức. Hơn nữa, việc ẩn giấu các biến thì các lớp sẽ không chia sẻ thông tin với nhau được. Điều này làm giảm số lượng khớp nối có thể có trong một ứng dụng.
+                                </p>
+        
+                                <div class="noidung">
+                                    <strong><h5>Nội dung chính</h5></strong>
+                                    <ul>
+                                        <a href="#"><li class="maul">Lợi ích của đóng gói trong java</li></a>
+                                        <a href="#"><li class="maul">Ví dụ về đóng gói trong java</li></a>
+                                    </ul>
+                                </div>
+        
+                                <h2>Lợi ích của đóng gói trong java</h2>
+                                <p>Bạn có thể tạo lớp <strong>read-only</strong> hoặc <strong>write-only</strong> bằng việc cài đặt phương thức setter hoặc getter.</p>
+                               <p>Bạn có thể kiểm soát đối vưới dữ liệu. Gỉa sử bạn muốn đặt giá trị của id chỉ lớn hơn 100 bạn có thể viết logic bên trong lớp setter.</p>
+
+                                <strong><h2>Ví dụ về đóng gói trong java: </h2></strong>
+                                    <p>Hãy xem ví dụ sau về đóng gói trong java với một chỉ có một trường và các phương thức setter và getter của nó.</p>
+                                    <p>File: Student.java</p>
+                                <div>
+                                    <ol>
+                                        <li style="padding-left:10px">public class Student { </li>
+                                        <li style="padding-left:80px">private String name;</li>
+                                        <li style="padding-left:100px">public String getName() {</li>
+                                        <li style="padding-left:100px"> return name;</li>
+                                        <li style="padding-left:100px">public void setName(String name) {</li>
+                                        <li style="padding-left:100px"> this.name = name;</li>
+                                        <li style="padding-left:50px">} </li> 
+                                        <li style="padding-left:10px">}</li>
+                                    </ol>
+                                    <p>File: Test.java</p>
+                                    <ol>
+                                        <li style="padding-left:10px">class Test {</li>
+                                        <li style="padding-left:80px">public static void main(String[] args) {</li>
+                                        <li style="padding-left:100px">Student s = new Student();</li>
+                                        <li style="padding-left:100px">s.setName("Hai");</li>
+                                        <li style="padding-left:100px">System.out.println(s.getName());</li>
+                                        <li style="padding-left:50px">} </li> 
+                                        <li style="padding-left:10px">}</li>
+                                    </ol>
+                                </div>
+                                <u><strong><p>Kết quả: </p></u></strong>
+                                <p class="tuoi">Hai</p>
+                            
+                                <div class="chux"> 
+                                    <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Abstract class vs Interface</p>
+                                    <p class="chux1">Tính kế thừa trong java <i class="fas fa-arrow-circle-right"></i></p>    
+                                </div>
+                         <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

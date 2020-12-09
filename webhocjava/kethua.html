@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính kế thừa trong java</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="kethua.css">
+</head>
+<body>
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">LGLH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/ckBc_1XnXhA"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+    
+                <div class="col-sm-6">
+                        <div id="wrapper">
+                            <div id="scroller">
+                                    <h4 class="gach">Tính kế thừa trong java </h4> 
+                                    <div class="chux"> 
+                                        <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Tính đóng gói trong java</p>
+                                        <p class="chux1">Overloading phương thức trong java <i class="fas fa-arrow-circle-right"></i></p>    
+                                    </div>
+                                    <p class="menhde"><strong>Kế thừa trong java </strong> là sự liên quan giữa hai class với nhau, trong đó có class cha (superclass) và class con (subclass). Khi kế thừa class con được hưởng tất cả các phương thức và thuộc tính của class cha. Tuy nhiên, nó chỉ được truy cập các thành viên public và protected của class cha. Nó không được phép truy cập đến thành viên private của class cha.
+                                      <br>
+                                     <p> Tư tưởng của kế thừa trong java là có thể tạo ra một class mới được xây dựng trên các lớp đang tồn tại. Khi kế thừa từ một lớp đang tồn tại bạn có sử dụng lại các phương thức và thuộc tính của lớp cha, đồng thời có thể khai báo thêm các phương thức và thuộc tính khác.</p> 
+                                    </p>
+            
+                                    <div class="noidung">
+                                        <strong><h5>Nội dung chính</h5></strong>
+                                        <ul>
+                                            <a href="#"><li class="maul">Cú pháp của kế thừa trong java</li></a>
+                                            <a href="#"><li class="maul">Ví dụ về kế thừa trong java</li></a>
+                                            <a href="#"><li class="maul">Các kiểu kế thừa trong java</li></a>
+                                            <a href="#"><li class="maul">Ví dụ về đơn kế thừa</li></a>
+                                            <a href="#"><li class="maul">Ví dụ về kế thừa nhiều cấp</li></a>
+                                            <a href="#"><li class="maul">Ví dụ về kế thừa thứ bậc</li></a>
+                                            <a href="#"><li class="maul">Câu hỏi:Tại sao đa kế thừa không được support trong java</li></a>
+                                      
+                                        </ul>
+                                    </div>
+            
+                                    <h2>Cú pháp của kế thừa trong java</h2>
+                                    <p>Sử dụng từ khóa extends để kế thừa.</p>
+                                    <div>
+                                        <ol>
+                                            <li style="padding-left:10px">class Subclass-name extends Superclass-name {  </li>
+                                            <li style="padding-left:80px">//methods and fields</li> 
+                                            <li style="padding-left:10px">}</li>
+                                        </ol>
+                                        <h2>Ví dụ về kế thừa trong java</h2>
+                                        <ol>
+                                            <li style="padding-left:10px">class Employee {</li>
+                                            <li style="padding-left:80px"> float salary = 1000;</li>
+                                            <li style="padding-left:10px">}</li>
+                                            <li style="padding-left:10px">class Programmer extends Employee {</li>
+                                            <li style="padding-left:80px"> int bonus = 150;</li>
+                                            <li style="padding-left:10px">}</li>
+                                            <li style="padding-left:10px">public class InheritanceSample1 {</li>
+                                            <li style="padding-left:50px">public static void main(String args[]) {</li>
+                                            <li style="padding-left:100px"><pre>
+                                                Programmer p = new Programmer();
+                                                System.out.println("Programmer salary is: " + p.salary);
+                                                System.out.println("Bonus of Programmer is: " + p.bonus);
+                                            </pre>
+                                            </li>
+                                            <li style="padding-left:50px">}</li>
+                                            <li style="padding-left:10px">}</li>
+                                        </ol>
+                                    </div>
+                                    <u><strong><p>Kết quả: </p></u></strong>
+                                    <pre class="tuoi">
+                                        Programmer salary is: 1000.0
+                                        Bonus of Programmer is: 150
+                                    </pre>
+                                    <p>
+                                        Trong ví dụ trên class Programmer là con của class Employee, nên nó được phép truy cập đến trường salary của class cha.
+                                    </p>
+                                <hr>
+                                <h2>Các kiểu kế thừa trong java</h2>
+                                <pre>Có 3 kiểu kế thừa trong java đó là đơn kế thừa, kế thừa nhiều cấp, kế thừa thứ bậc.
+
+                                    Khi một class được kế thừa từ nhiều class đươc gọi là đa kế thừa. Trong java, đa kế thừa chỉ được support thông qua interface, như đã được nói đến trong bài <a href="#">interface trong java</a>
+                                </pre>
+
+                                <img src="img/cac-kieu-ke-thua.jpg" alt="h">
+
+
+                                <h2>Ví dụ về đơn kế thừa trong java</h2>
+                                <p>File: TestInheritance1.java</p>
+                                <ol>
+                                    <li style="padding-left:10px">class Animal {</li>
+                                    <li style="padding-left:50px">void eat() {</li>
+                                    <li style="padding-left:80px">System.out.println("eating...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">class Dog extends Animal {</li>
+                                    <li style="padding-left:50px"> void bark() {</li>
+                                    <li style="padding-left:80px">System.out.println("barking...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">public class TestInheritance1 {</li>
+                                    <li style="padding-left:50px">public static void main(String args[]) {</li>
+                                    <li style="padding-left:80px">Dog d = new Dog();</li>
+                                    <li style="padding-left:80px">d.bark();</li>
+                                    <li style="padding-left:10px">d.eat();</li>
+                                    <li style="padding-left:50px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                </ol>
+
+                                <pre>
+                                    Output: 
+                                        barking...
+                                        eating...
+                                </pre>
+
+                                <h2>Ví dụ về kế thừa nhiều cấp</h2>
+                                <p>File: TestInheritance2.java</p>
+                                <ol>
+                                    <li style="padding-left:10px">class Animal {</li>
+                                    <li style="padding-left:50px">void eat() {</li>
+                                    <li style="padding-left:80px">System.out.println("eating...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">class Dog extends Animal {</li>
+                                    <li style="padding-left:50px"> void bark() {</li>
+                                    <li style="padding-left:80px">System.out.println("barking...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">class BabyDog extends Dog {</li>
+                                    <li style="padding-left:50px"> void weep() {</li>
+                                    <li style="padding-left:80px"> System.out.println("weeping...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+
+                                    <li style="padding-left:10px">public class TestInheritance2 {</li>
+                                    <li style="padding-left:50px">public static void main(String args[]) {</li>
+                                    <li style="padding-left:80px"> BabyDog d = new BabyDog();</li>
+                                    <li style="padding-left:80px">d.weep();</li>
+                                    <li style="padding-left:80px">d.bark();</li>
+                                    <li style="padding-left:10px">d.eat();</li>
+                                    <li style="padding-left:50px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                </ol>
+
+                                <pre>
+                                    Output: 
+                                        weeping...
+                                        barking...
+                                        eating...
+                                </pre>
+                            
+                                <h2>Ví dụ về kế thừa thứ bậc</h2>
+                                <p>File: TestInheritance3.java</p>
+                                <ol>
+                                    <li style="padding-left:10px">class Animal {</li>
+                                    <li style="padding-left:50px">void eat() {</li>
+                                    <li style="padding-left:80px">System.out.println("eating...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">class Dog extends Animal {</li>
+                                    <li style="padding-left:50px"> void bark() {</li>
+                                    <li style="padding-left:80px">System.out.println("barking...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">class Cat extends Animal {</li>
+                                    <li style="padding-left:50px">void meow() {</li>
+                                    <li style="padding-left:80px">System.out.println("meowing...");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+
+                                    <li style="padding-left:10px">public class TestInheritance3 {</li>
+                                    <li style="padding-left:50px">public static void main(String args[]) {</li>
+                                    <li style="padding-left:80px">Cat c = new Cat();</li>
+                                    <li style="padding-left:80px"> c.meow();</li>
+                                    <li style="padding-left:10px">d.eat();</li>
+                                    <li style="padding-left:50px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                </ol>
+
+                                <pre>
+                                    Output: 
+                                        meowing...
+                                        eating...
+                                </pre>
+
+                                <hr>
+                                <h2> Câu hỏi: Tại sao đa kế thừa không được support trong java?</h2>
+                                <pre> 
+                                    Để giảm thiểu sự phức tạp và đơn giản hóa ngôn ngữ, đa kế thừa không được support trong java.
+
+                                    Hãy suy xét kịch bản sau: Có 3 lớp A, B, C. Trong đó lớp C kế thừa từ các lớp A và B. Nếu các lớp A và B có phương thức giống nhau và bạn gọi nó từ đối tượng của lớp con, như vậy khó có thể xác đinh được việc gọi phương thức của lớp A hay B.
+
+                                    Vì vậy lỗi khi biên dịch sẽ tốt hơn lỗi khi runtime, java sẽ print ra lỗi "compile time error" nếu bạn cố tình kế thừa 2 class.
+                                </pre>
+
+                                <ol>
+                                    <li style="padding-left:10px">class A {</li>
+                                    <li style="padding-left:50px">void msg() {</li>
+                                    <li style="padding-left:80px"> System.out.println("Hello");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">class B {</li>
+                                    <li style="padding-left:50px">void msg() {</li>
+                                    <li style="padding-left:80px">System.out.println("Welcome");</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                    <li style="padding-left:10px">public class C extends A,B { </li>
+                                    <li style="padding-left:80px">public static void main(String args[]) {</li>
+                                    <li style="padding-left:50px"> C obj = new C();</li>
+                                    <li style="padding-left:50px">obj.msg();</li>
+                                    <li style="padding-left:30px">}</li>
+                                    <li style="padding-left:10px">}</li>
+                                </ol>
+
+                                <pre>
+                                    Compile Time Error
+                                </pre>
+
+
+                                    <div class="chux"> 
+                                        <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Tính đóng gói trong java</p>
+                                        <p class="chux1">Overloading phương thức trong java<i class="fas fa-arrow-circle-right"></i></p>    
+                                    </div>
+                             <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+</html>
